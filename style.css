@@ -1,0 +1,100 @@
+.main{
+    display: flex;
+ gap: 150px;
+}
+
+
+.s1{
+    height: 500px;
+}
+.s2{
+    height: 500px;
+}
+.a1{
+    text-align: center;
+    font-weight: bold;
+    height: 150px;
+    width: 200px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 3s;
+}
+@keyframes example  {
+    from {background-color: red;}
+    to {background-color: blue;}
+}
+.a2{
+    text-align: center;
+    font-weight: bold;
+    height: 150px;
+    width: 200px;
+    background-color: darkorange;
+    transition: width 2s;
+}
+
+ .a2:hover {
+    width: 400px;
+    background-color: aqua;
+}
+.a3{
+    text-align: center;
+    font-weight: bold;
+    height: 150px;
+    width: 200px;
+    animation-name: example2;
+    animation-duration: 3s;
+    position: relative;
+    animation-iteration-count: infinite;
+    background-color: coral;
+}
+    @keyframes example2 {
+        0%{background-color: red; left: 0px; top: 0px;}
+        25%{background-color: aqua; left: 200px; top: 0px;}
+        50%{background-color: black; left: 200px; top: 200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+
+        100%{background-color: brown; left: 0px; top: 0px;}
+        
+    }
+
+.a4{
+text-align: center;
+    font-weight: bold;
+    height: 150px;
+    width: 200px;
+    animation-duration: 3s;
+    background-color: magenta;
+    transition: transform 2s;
+}
+
+.a4:hover{
+    transform: rotate(360deg);
+}
+
+.a5{
+    transition-timing-function: linear;
+}
+.a6{
+    transition-timing-function: ease;
+}
+.a7{
+    transition-timing-function: ease-in;
+}
+.a8{
+    transition-timing-function: ease-in-out;
+}
+.a9{
+    transition-timing-function: ease-out;
+}
+.a10{
+height: 100px;
+width: 100px;
+background-color:pink;
+transition: width 2s;
+}
+.a10:hover{
+width: 300px;
+}
+html {
+    scroll-behavior: smooth; 
+}
